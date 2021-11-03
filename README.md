@@ -41,6 +41,10 @@ We're storing the messages on our local machine. And we're doing it all in 1 day
         * seperated view from php :heavy_check_mark:
         * seperated header, footer and body :heavy_check_mark:
         * :exclamation: **having trouble saving the messages to a file and then getting the file contents in a readable format**
+        * after Lunch I asked for help from our coach [Tim](https://github.com/Timmeahj) to understand the way json_encode structured the data in the messages.json file
+        * I can now `put` and `get` data from `message.json` :heavy_check_mark:
+        * I'm showing the messages with the latest message at the top :heavy_check_mark:
+        * Finally got the messages to show where I want them, had to move the `require "body.html";` :heavy_check_mark:
 
 ## To Do
 

@@ -17,4 +17,13 @@ class Post
         $this->time = $time;
     }
 
+    public function setArray(): array
+    {
+        return ["message"=>["title"=>$this->title, "message"=>$this->message, "name"=>$this->name, "date"=>$this->date, "time"=>$this->time]];
+    }
+
+    public function saveToFile($array)
+    {
+        file_put_contents("messages.json", json_encode($array));
+    }
 }
