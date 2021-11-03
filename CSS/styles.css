@@ -19,7 +19,6 @@ header, footer {
 
 #main{
     overflow-x: hidden;
-    background-color: yellow;
     height: 80vh;
 }
 
@@ -37,7 +36,11 @@ form, #overview {
 }
 
 .showPosts {
-    background-color: pink;
+    border: 2px solid darkslategrey;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+    padding: 1%;
 }
 
 
