@@ -40,6 +40,7 @@ We're storing the messages on our local machine. And we're doing it all in 1 day
         * create new Post with title, message, name, date and timestamp :heavy_check_mark:
         * seperated view from php :heavy_check_mark:
         * seperated header, footer and body :heavy_check_mark:
+        * :exclamation: **having trouble saving the messages to a file and then getting the file contents in a readable format**
 
 ## To Do
 
