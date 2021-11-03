@@ -10,9 +10,9 @@ class Post
 
     public function __construct(string $title, string $message, string $name, string $date, string $time)
     {
-        $this->title = $title;
-        $this->message = $message;
-        $this->name = $name;
+        $this->title = $this->protect($title);
+        $this->message = $this->protect($message);
+        $this->name = $this->protect($name);
         $this->date = $date;
         $this->time = $time;
     }
@@ -25,5 +25,10 @@ class Post
     public function saveToFile($array)
     {
         file_put_contents("messages.json", json_encode($array));
+    }
+
+    private function protect(string $toCheck): string
+    {
+        return htmlSpecialchars($toCheck, ENT_NOQUOTES, 'UTF-8');
     }
 }

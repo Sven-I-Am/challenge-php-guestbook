@@ -13,6 +13,11 @@ class PostLoader
         return json_decode(file_get_contents("messages.json"), true);
     }
 
+    public function getAllPosts()
+    {
+        return $this->allPosts;
+    }
+
     public function getTitle($post): string
     {
         return $post["message"]["title"];
@@ -32,4 +37,5 @@ class PostLoader
     {
         return $post["message"]["date"] . " at " . $post["message"]["time"];
     }
+
 }

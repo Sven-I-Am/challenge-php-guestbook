@@ -18,8 +18,12 @@
     </div>
     <div class="col" id="overview">
         <?php
-        if($loadPosts!=NULL){
-            foreach (array_reverse($allPosts) as $post){
+        if($loadPosts->getAllPosts() != NULL){
+            $allPosts = array_reverse($allPosts);
+            if (count($allPosts)>20){
+                $allPosts = array_slice($allPosts, 0,20);
+            }
+            foreach ($allPosts as $post){
                 echo "<div class='showPosts'>";
                 echo "<h2>" . $loadPosts->getTitle($post) . "</h2>";
                 echo "<p>" . $loadPosts->getMessage($post) . "</p>";

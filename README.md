@@ -45,6 +45,12 @@ We're storing the messages on our local machine. And we're doing it all in 1 day
         * I can now `put` and `get` data from `message.json` :heavy_check_mark:
         * I'm showing the messages with the latest message at the top :heavy_check_mark:
         * Finally got the messages to show where I want them, had to move the `require "body.html";` :heavy_check_mark:
+        * had trouble showing the messages up to date after new post submission, something strange was happening when checking the 'isset($_POST)' it now works!!:heavy_check_mark:
+        * added a layer of protection by putting all the user input through a `protect()` method which uses the `htmlspecialchars()` :heavy_check_mark:
+        * I should now have the core functionalities in there :heavy_check_mark:
+          * :exclamation: **although there is still something strange with the first message to be posted after emptying out the json file.**
+        * :tada: **Done with the must haves**
+        * :clock 5; 5PM end of the day, ran out of time for extras
 
 ## To Do
 
@@ -52,18 +58,14 @@ This to do list is for my personal use, the full to do list is added at the star
 objectives they will be moved up into the timeline section and ticked off using either emotes such as :heavy_check_mark:
 or the `checkbox` syntax [ ] [x] provided by markdown.
 
-### Must haves
-#### :exclamation: Keep your view (html code) seperated from your PHP as much as possible
-#### :exclamation: Separate the footer and header HTML code and `require()` them in your template files to avoid code repetition
-1. Posts must contain at least:
-   * Title
-   * Date
-   * Content
-   * Author name
-2. At least 2 classes: PostLoader & Post
-3. Sort messages from new to old (most recent on top)
-4. Handle possible site defacement attacks using `htmlspecialchars()`
-5. Only show the 20 latest posts
+### Must haves :heavy_check_mark:
+#### :exclamation: Keep your view (html code) seperated from your PHP as much as possible :heavy_check_mark:
+#### :exclamation: Separate the footer and header HTML code and `require()` them in your template files to avoid code repetition :heavy_check_mark:
+1. Posts must contain at least a Title, Date, Content, Author name :heavy_check_mark:
+2. At least 2 classes: PostLoader & Post :heavy_check_mark:
+3. Sort messages from new to old (most recent on top) :heavy_check_mark:
+4. Handle possible site defacement attacks using `htmlspecialchars()` :heavy_check_mark:
+5. Only show the 20 latest posts :heavy_check_mark:
 
 ### Nice to have
 1. Add a profanity filter (array with "bad" words)

@@ -1,16 +1,20 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require "HTML/header.php";
 require "Classes/Post.php";
 require "Classes/PostLoader.php";
 
 $loadPosts = new PostLoader();
-$allPosts = $loadPosts->getFileContent();
+if ($loadPosts->getAllPosts() != NULL){
+    $allPosts = $loadPosts->getFileContent();
+} else {
+    $allPosts =[];
+}
 
-
-require "HTML/body.php";
-require "HTML/footer.php";
-
-if (isset($_POST)){
+if (isset($_POST["title"])){
     $title = $_POST["title"];
     $message=$_POST["message"];
     $name = $_POST["name"];
@@ -27,5 +31,5 @@ if (isset($_POST)){
     $post->saveToFile($allPosts);
     $allPosts = $loadPosts->getFileContent();
 }
-
-
+require "HTML/body.php";
+require "HTML/footer.php";
