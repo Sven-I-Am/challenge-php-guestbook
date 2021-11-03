@@ -1,0 +1,45 @@
+HTML {
+    font-family: Lato, Arial, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    background-color: darkslategray;
+    color: #bbb;
+    width: 100%;
+    font-size: 22px;
+    padding: 1%;
+}
+
+header, footer {
+    position: absolute;
+    left: 0;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+#main{
+    overflow-x: hidden;
+    background-color: yellow;
+}
+
+form, #overview {
+    width: 80%;
+    margin: 12% auto;
+}
+
+#title, #name, #message {
+    margin: 1% 0;
+}
+
+#message {
+    min-height: 150px;
+}
+
+

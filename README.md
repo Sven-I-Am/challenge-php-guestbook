@@ -36,6 +36,10 @@ We're storing the messages on our local machine. And we're doing it all in 1 day
         * created .gitignore to ignore .idea folder :heavy_check_mark:
         * created index.php file :heavy_check_mark:
         * first commit and push of the project at :clock9: 09:30AM :heavy_check_mark:
+        * created form with title, message and name fields :heavy_check_mark:
+        * create new Post with title, message, name, date and timestamp :heavy_check_mark:
+        * seperated view from php :heavy_check_mark:
+        * seperated header, footer and body :heavy_check_mark:
 
 ## To Do
 
