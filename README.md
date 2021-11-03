@@ -50,7 +50,7 @@ We're storing the messages on our local machine. And we're doing it all in 1 day
         * I should now have the core functionalities in there :heavy_check_mark:
           * :exclamation: **although there is still something strange with the first message to be posted after emptying out the json file.**
         * :tada: **Done with the must haves**
-        * :clock 5; 5PM end of the day, ran out of time for extras
+        * :clock5: 5PM end of the day, ran out of time for extras
 
 ## To Do
 
