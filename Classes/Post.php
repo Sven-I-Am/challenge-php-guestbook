@@ -37,7 +37,7 @@ class Post
 
     private function setProfanities ()
     {
-        return $this->profanities = ['fuck', 'shit', 'bitch', 'cunt', 'trut', 'homo', 'fagget', 'fag', 'sissy', 'tranny', 'dike', 'lesbo'];
+        return $this->profanities = ['fuck', 'shit', 'bitch', 'cunt', 'trut', 'homo', 'fagget', 'fag', 'sissy', 'tranny', 'dike', 'lesbo', 'asshole'];
     }
 
     public function checkProfanities(string $toCheck)

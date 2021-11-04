@@ -60,6 +60,10 @@ We're storing the messages on our local machine. And we're doing it all in 1 day
       * I had to combine the profanity filter and the defacement protection into one method and filter out profanities before filtering out bad intent code :heavy_check_mark:
         * the defacement check still shows the written code as is, just in case someone wants to share a code snippet this will still allow it without running the actual code
       * Now featuring smileys! :heavy_check_mark:
+      * The user can now select the number of posts they want to have displayed :heavy_check_mark:
+      * I also added error messages when either input field is left empty :heavy_check_mark:
+  * :tada: **done with the extras now! :tada:
+  * final push of the project at :clock3: 14:45
   
 
 ## To Do
@@ -80,4 +84,4 @@ or the `checkbox` syntax [ ] [x] provided by markdown.
 ### Nice to have
 1. Add a profanity filter (array with "bad" words) :heavy_check_mark:
 2. Replace typed smileys with their image counterpart :heavy_check_mark:
-3. Allow the user to pick how many messages he wants to see displayed
+3. Allow the user to pick how many messages he wants to see displayed :heavy_check_mark:
