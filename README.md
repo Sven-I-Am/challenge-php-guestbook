@@ -57,6 +57,9 @@ We're storing the messages on our local machine. And we're doing it all in 1 day
   * In between helping I'm working on the nice to haves
     * Done today:
       * profanity filter should now work without case sensitivity :heavy_mark_check:
+      * I had to combine the profanity filter and the defacement protection into one method and filter out profanities before filtering out bad intent code :heavy_check_mark:
+        * the defacement check still shows the written code as is, just in case someone wants to share a code snippet this will still allow it without running the actual code
+  
 
 ## To Do
 

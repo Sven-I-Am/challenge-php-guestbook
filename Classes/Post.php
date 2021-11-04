@@ -12,11 +12,8 @@ class Post
     public function __construct(string $title, string $message, string $name, string $date, string $time)
     {
         $this->title = $this->protect($title);
-        $this->title = $this->checkProfanities($title);
         $this->message = $this->protect($message);
-        $this->message = $this->checkProfanities($message);
         $this->name = $this->protect($name);
-        $this->name = $this->checkProfanities($name);
         $this->date = $date;
         $this->time = $time;
     }
@@ -33,7 +30,8 @@ class Post
 
     private function protect(string $toCheck): string
     {
-        return htmlSpecialchars($toCheck, ENT_NOQUOTES, 'UTF-8');
+        $toCheck = $this->checkProfanities($toCheck);
+        return htmlspecialchars($toCheck, ENT_QUOTES);
     }
 
     private function setProfanities ()
