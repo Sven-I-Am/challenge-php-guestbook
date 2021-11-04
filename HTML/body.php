@@ -1,4 +1,21 @@
 <div class="row" id="main">
+    <div class="col-1 px-4">
+        <p>:) = 😀</p>
+        <p>:-) = 😀</p>
+        <p>:D = 😁</p>
+        <p>:-D = 😁</p>
+        <p>:'D = '😂</p>
+        <p>O) = 😇</p>
+        <p>O-) = 😇</p>
+        <p>;-) = 😉</p>
+        <p>;) = 😉</p>
+        <p>:-o = 😮</p>
+        <p>:o = 😮</p>
+        <p>:( = ☹</p>
+        <p>:-( = ☹</p>
+        <p>:@ = 🤬</p>
+        <p>:-@ = 🤬</p>
+    </div>
     <div class="col" id="form">
         <form method="post">
             <div class="form-row">

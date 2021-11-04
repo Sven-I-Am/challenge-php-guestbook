@@ -56,9 +56,10 @@ We're storing the messages on our local machine. And we're doing it all in 1 day
   * Those of us that got the must-haves done yesterday are now helping our fellow learners in small teams of 4
   * In between helping I'm working on the nice to haves
     * Done today:
-      * profanity filter should now work without case sensitivity :heavy_mark_check:
+      * profanity filter should now work without case sensitivity :heavy_check_mark:
       * I had to combine the profanity filter and the defacement protection into one method and filter out profanities before filtering out bad intent code :heavy_check_mark:
         * the defacement check still shows the written code as is, just in case someone wants to share a code snippet this will still allow it without running the actual code
+      * Now featuring smileys! :heavy_check_mark:
   
 
 ## To Do
@@ -77,6 +78,6 @@ or the `checkbox` syntax [ ] [x] provided by markdown.
 5. Only show the 20 latest posts :heavy_check_mark:
 
 ### Nice to have
-1. Add a profanity filter (array with "bad" words)
-2. Replace typed smileys with their image counterpart
+1. Add a profanity filter (array with "bad" words) :heavy_check_mark:
+2. Replace typed smileys with their image counterpart :heavy_check_mark:
 3. Allow the user to pick how many messages he wants to see displayed

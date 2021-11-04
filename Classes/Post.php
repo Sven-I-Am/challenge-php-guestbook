@@ -31,6 +31,7 @@ class Post
     private function protect(string $toCheck): string
     {
         $toCheck = $this->checkProfanities($toCheck);
+        $toCheck = $this->emotes($toCheck);
         return htmlspecialchars($toCheck, ENT_QUOTES);
     }
 
@@ -52,5 +53,26 @@ class Post
             array_push($new, $word);
         }
         return implode(" ", $new);
+    }
+
+    private function emotes(string $toCheck){
+        $emotes = [
+            ":)" => '😀',
+            ":-)" => '😀',
+            ":D" => '😁',
+            ":-D" =>'😁',
+            ":'D" => '😂',
+            "O)" => '😇',
+            "O-)" => '😇',
+            ";-)" => '😉',
+            ";)" => '😉',
+            ":-o" => '😮',
+            ":o" => '😮',
+            ":(" => '☹',
+            ":-(" => '☹',
+            ":@" => '🤬',
+            ":-@" => '🤬'
+        ];
+        return str_ireplace(array_keys($emotes), $emotes, $toCheck);
     }
 }
