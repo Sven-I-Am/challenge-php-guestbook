@@ -41,16 +41,22 @@ We're storing the messages on our local machine. And we're doing it all in 1 day
         * seperated view from php :heavy_check_mark:
         * seperated header, footer and body :heavy_check_mark:
         * :exclamation: **having trouble saving the messages to a file and then getting the file contents in a readable format**
-        * after Lunch I asked for help from our coach [Tim](https://github.com/Timmeahj) to understand the way json_encode structured the data in the messages.json file
+        * after Lunch, I asked for help from our coach [Tim](https://github.com/Timmeahj) to understand the way json_encode structured the data in the messages.json file
         * I can now `put` and `get` data from `message.json` :heavy_check_mark:
         * I'm showing the messages with the latest message at the top :heavy_check_mark:
-        * Finally got the messages to show where I want them, had to move the `require "body.html";` :heavy_check_mark:
+        * Finally, got the messages to show where I want them, had to move the `require "body.html";` :heavy_check_mark:
         * had trouble showing the messages up to date after new post submission, something strange was happening when checking the 'isset($_POST)' it now works!!:heavy_check_mark:
         * added a layer of protection by putting all the user input through a `protect()` method which uses the `htmlspecialchars()` :heavy_check_mark:
         * I should now have the core functionalities in there :heavy_check_mark:
           * :exclamation: **although there is still something strange with the first message to be posted after emptying out the json file.**
-        * :tada: **Done with the must haves**
+        * :tada: **Done with the must-haves**
         * :clock5: 5PM end of the day, ran out of time for extras
+* Day 2 (:date:04/11/2021)
+  * We got the happy news that our deadline was extended by a day!
+  * Those of us that got the must-haves done yesterday are now helping our fellow learners in small teams of 4
+  * In between helping I'm working on the nice to haves
+    * Done today:
+      * profanity filter should now work without case sensitivity :heavy_mark_check:
 
 ## To Do
 
@@ -58,7 +64,7 @@ This to do list is for my personal use, the full to do list is added at the star
 objectives they will be moved up into the timeline section and ticked off using either emotes such as :heavy_check_mark:
 or the `checkbox` syntax [ ] [x] provided by markdown.
 
-### Must haves :heavy_check_mark:
+### must-haves :heavy_check_mark:
 #### :exclamation: Keep your view (html code) seperated from your PHP as much as possible :heavy_check_mark:
 #### :exclamation: Separate the footer and header HTML code and `require()` them in your template files to avoid code repetition :heavy_check_mark:
 1. Posts must contain at least a Title, Date, Content, Author name :heavy_check_mark:

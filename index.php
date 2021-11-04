@@ -22,6 +22,7 @@ if (isset($_POST["title"])){
     $time=date("H:i:s");
 
     $post = new Post($title, $message, $name, $date, $time);
+
     $postArray = $post->setArray();
     if($allPosts==NULL){
         $allPosts[0] = $postArray;
